@@ -1,0 +1,233 @@
+{
+	"menus": [
+		{
+			"title": "PROJECTS",
+			"url": "https://owasp.org/projects/",
+			"items": [
+				{
+					"title": "Browse All Projects...",
+					"url": "https://owasp.org/projects/"
+				},
+				{
+					"title": "OWASP Top Ten",
+					"url": "https://owasp.org/www-project-top-ten/",
+					"separator": "true"
+				},
+				{
+					"title": "Dependency Track",
+					"url": "https://owasp.org/www-project-dependency-track/"
+				},
+				{
+					"title": "Juice Shop",
+					"url": "https://owasp.org/www-project-juice-shop/"
+				},
+				{
+					"title": "Mobile Application Security",
+					"url": "https://owasp.org/mas/"
+				},
+				{
+					"title": "ModSecurity Core Rule Set",
+					"url": "https://owasp.org/www-project-modsecurity-core-rule-set/"
+				},
+				{
+					"title": "Software Assurance Maturity Model (SAMM)",
+					"url": "https://owasp.org/www-project-samm/"
+				},
+				{
+					"title": "Web Security Testing Guide",
+					"url": "https://owasp.org/www-project-web-security-testing-guide/"
+				},
+				{
+					"title": "Start a New Project...",
+					"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/7/create/70?src=-1419759666",
+					"separator": "true"
+				},
+				{
+					"title": "Community Contributions",
+					"url": "https://owasp.org/www-community/",
+					"separator": "true"
+				},
+				{
+					"title": "Google Summer of Code 2024",
+					"url": "https://owasp.org/gsoc/gsoc2024"
+				}
+			]
+		},
+		{
+			"title": "CHAPTERS",
+			"url": "https://owasp.org/chapters/",
+			"items": [
+				{
+					"title": "Find a Local Chapter...",
+					"url": "https://owasp.org/chapters/"
+				},
+				{
+					"title": "Africa",
+					"url": "https://owasp.org/chapters/#Africa",
+					"separator": "true"
+				},
+				{
+					"title": "Asia",
+					"url": "https://owasp.org/chapters/#Asia"
+				},
+				{
+					"title": "Caribbean",
+					"url": "https://owasp.org/chapters/#TheCarribean"
+				},
+				{
+					"title": "Central America",
+					"url": "https://owasp.org/chapters/#CentralAmerica"
+				},
+				{
+					"title": "Europe",
+					"url": "https://owasp.org/chapters/#Europe"
+				},
+				{
+					"title": "North America",
+					"url": "https://owasp.org/chapters/#NorthAmerica"
+				},
+				{
+					"title": "Oceania",
+					"url": "https://owasp.org/chapters/#Oceania"
+				},
+				{
+					"title": "South America",
+					"url": "https://owasp.org/chapters/#SouthAmerica"
+				},
+				{
+					"title": "Start a Local Chapter...",
+					"url": "https://owasporg.atlassian.net/servicedesk/customer/portal/8/group/20/create/90?src=-1419759666",
+					"separator": "true",
+					"opentab": "true"
+				}
+			]
+		},
+		{
+			"title": "EVENTS",
+			"url": "/events/",
+			"items": [
+				{															
+				        "title": "OWASP Global AppSec EU 2025",
+					"url": "https://owasp.glueup.com/event/owasp-global-appsec-eu-2025-123983/",
+					"opentab": "true"
+				},
+				{
+					"title": "OWASP SnowFROC 2025",
+					"url": "https://snowfroc.com/",
+					"opentab": "true"				
+				},
+				{
+					"title": "OWASP LASCON 2025",
+					"url": "https://lascon.org/",
+					"opentab": "true"					
+				},
+				{
+					"title": "Upcoming Chapter Events",
+					"url": "https://owasp.org/chapters/events/"
+				},
+				{
+					"title": "Browse All Events...",
+					"url": "https://owasp.org/events/",
+					"separator": "true"
+				}
+			]
+		},
+		{
+			"title": "ABOUT",
+			"url": "https://owasp.org/about/",
+			"items": [
+				{
+					"title": "About OWASP",
+					"url": "https://owasp.org/about/"
+				},
+				{
+					"title": "Awards",
+					"url": "https://owasp.org/awards/"
+				},
+				{
+					"title": "Careers",
+					"url": "https://owasp.org/careers/"
+				},
+				{
+					"title": "Committees",
+					"url": "https://owasp.org/committees/"
+				},
+				{
+					"title": "Contact Us",
+					"url": "https://owasp.org/contact/"
+				},
+				{
+					"title": "Contributed Content",
+					"url": "https://owasp.org/www-community"
+				},
+				{
+					"title": "Corporate Supporters",
+					"url": "https://owasp.org/supporters/"
+				},
+				{
+					"title": "Donate",
+					"url": "https://owasp.org/donate/"
+				},
+				{
+					"title": "Finance",
+					"url": "https://owasp.org/finance/"
+				},
+				{
+					"title": "Get OWASP Gear",
+					"url": "https://owasp.org/store"
+				},
+				{
+					"title": "Global Board",
+					"url": "https://owasp.org/www-board/"
+				},
+				{
+					"title": "Global Board EU",
+					"url": "https://owasp.org/www-board-eu/"
+				},
+				{
+					"title": "Governance",
+					"url": "https://owasp.org/governance/"
+				},
+				{
+					"title": "Membership Portal",
+					"url": "https://owasp.glueup.com"
+				},
+				{
+					"title": "Opinions & News",
+					"url": "https://owasp.org/news/"
+				},
+				{
+					"title": "Policies",
+					"url": "https://owasp.org/www-policy/"
+				},
+				{
+					"title": "Staff",
+					"url": "https://owasp.org/corporate/"
+				},
+				{
+					"title": "Staff Projects & Procedures",
+					"url": "https://owasp.org/www-staff/"
+				},
+				{
+					"title": "Subscribe to our Mailing List",
+					"url": "https://owasp.us17.list-manage.com/subscribe?u=a8012c9e2e384bf8ea8d7deb7&id=22be76c892"
+				},
+				{
+					"title": "Video",
+					"url": "https://www.youtube.com/user/OWASPGLOBAL/videos",
+					"opentab": "true"
+				}
+			]
+		},
+		{
+			"title": "<icon style='margin-left:50%;' class='fa fa-search'>",
+			"url" : "#",
+			"items": [
+				{
+				"title": "<form style='display:inline-block;' role='search' method='get' action='https://owasp.org/search'><div class='search-div'><input id='searchString' name='searchString' class='mini-search-bar' type='search' placeholder='Search OWASP.org' required='true'><button id='search-button' type='submit' class='fa fa-search'></button></div></form>",
+				"url": "#" 
+				}
+			]
+		}
+	]
+}
