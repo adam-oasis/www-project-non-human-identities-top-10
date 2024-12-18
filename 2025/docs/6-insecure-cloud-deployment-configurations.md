@@ -1,4 +1,9 @@
-## #6 Insecure Cloud Deployment Configurations
+# NHI6:2025 Insecure Cloud Deployment Configurations
+
+| Threat Agents & Attack Vectors                    | Security Weakness                                                                                          | Impact                                         |
+|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| Exploitability: **Average**            | Prevalence: **Common**<br>Detectability: **Easy**                       | Technical Impact: **Severe**<br>Business: **Specific**     |
+| Generally, discovering misconfigured pipelines is difficult because they are set up within the organization's confines. However, once a threat actor gains simple read access, they can relatively easily reconnoiter the environment and discover vulnerable configurations. | Risks in managing CI/CD pipelines have gained awareness, and as a result, many CI/CD providers support OIDC-based access and push their users to use it. However, many organizations still need to catch up and use hard-coded credentials or insecure OIDC-based authentication. <br> The CI/CD misconfigurations happen on the organizations' “home turf” and thus are easy to search for. Furthermore, current known misconfigurations are well documented. | Successfully compromising a CI/CD misconfiguration could lead to supply chain attacks or rogue access to environments, as most pipelines are granted high-privilege access.
 
 ### Description
 
