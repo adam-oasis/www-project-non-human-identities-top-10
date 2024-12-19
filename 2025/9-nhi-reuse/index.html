@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nhi92025-nhi-reuse" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -526,6 +531,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NHI9:2025 NHI Reuse
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -536,6 +554,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How To Prevent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How To Prevent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Scoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -598,6 +695,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How To Prevent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How To Prevent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-scoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risk Scoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -615,9 +782,83 @@
   
 
 
-  <h1>NHI9:2025 NHI Reuse</h1>
-
-<p>TBA</p>
+<h1 id="nhi92025-nhi-reuse">NHI9:2025 NHI Reuse<a class="headerlink" href="#nhi92025-nhi-reuse" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Threat agents/Attack vectors</th>
+<th>Security Weakness</th>
+<th>Impacts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exploitability - <strong>Hard</strong></td>
+<td>Prevalence - <strong>Widespread</strong> : Detectability - <strong>Hard</strong></td>
+<td>Technical - <strong>Low</strong> : Business - <strong>Specific</strong></td>
+</tr>
+<tr>
+<td>Successfully exploiting a Re-used NHI requires the threat agent to first gain access to the environment. Therefore, NHI Reuse is dependent on a separate initial access vector.</td>
+<td>NHIs are very commonly reused because tailor fitting NHI for each workload is difficult. Common cases include the use of a single AWS IAM Role for multiple workloads or the use of a single API key for multiple workloads. Detecting NHI reuse is difficult given the high variability of workloads that can be using the NHI.</td>
+<td>NHI Reuse impact depends on the privilege of the associated NHI. If least-privilege is adopted, this impact is Low.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
+<p>Non-Human Identities (NHIs), such as service accounts, API keys, and machine credentials, play a critical role in enabling applications and services to authenticate and access necessary resources. However, reusing the same NHI across different applications, services, or components—even if they are deployed together—introduces significant security risks. If an NHI is compromised in one area, an attacker can exploit it to gain unauthorized access to other parts of the system that use the same credentials. </p>
+<p>In addition to these risks, the reuse of NHIs can complicate breach mitigation actions and impact audits.   </p>
+<p>To minimize these risks, it's essential to assign unique NHIs to each application or service. This approach adheres to the principle of least privilege, ensuring that each NHI has only the permissions necessary for its specific function. By isolating NHIs, organizations can contain potential breaches and prevent attackers from moving laterally within the environment.</p>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Kubernetes Service Account Reuse</strong>: In a Kubernetes cluster, multiple pods can share the same Kubernetes service account, including critical pods responsible for orchestration tasks. If one pod has a vulnerability and gets compromised, an attacker can use the shared service account to perform actions across the cluster. This could lead to unauthorized access to sensitive data, manipulation of workloads, or even full control over the cluster's resources.</li>
+<li><strong>Shared API Keys Between Applications</strong>: An organization uses the same API key for multiple applications to access a third-party service. If one application is compromised and the API key is exposed, the attacker can use it to access or manipulate data across all applications that use the shared key, potentially leading to a widespread breach.</li>
+<li><strong>Reused Cloud Credentials</strong>: Different services within an organization utilize the same cloud credentials (e.g., AWS IAM roles, Azure service principals) to interact with cloud resources. If an attacker obtains these credentials from a less secure service, they can access critical resources used by more secure services, bypassing isolation mechanisms and escalating the attack.</li>
+</ul>
+<h2 id="how-to-prevent">How To Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Assign Unique NHIs to Each Application or Service</strong></li>
+<li>Ensure that each logical system component is granted a unique NHI which it operates under</li>
+<li>Ensure that the ability to authenticate as the assigned NHI is limited to the associated system component</li>
+<li><strong>Assign Unique NHIs in Each Environment</strong></li>
+<li>Ensure that each logical environment uses distinct NHIs when interacting with other systems or environments</li>
+<li><strong>Enforce the Principle of Least Privilege</strong></li>
+<li>Ensure that NHIs are only granted the minimal level of access required for their function</li>
+<li><strong>Audit and Review the Use of NHIs</strong></li>
+<li>Audit all NHIs along with their access grants and assigned system components</li>
+<li>Review, on a regular basis, that NHIs are not reused and that they continue to follow the principle of least privilege for their function</li>
+</ul>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/">Kubernetes: Managing Service Accounts</a></li>
+<li><a href="https://owasp.org/www-community/Access_Control">OWASP: Principle of Least Privilege</a></li>
+<li><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html">AWS Identity and Access Management Best Practices</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal">Azure Service Principal Security</a></li>
+<li><a href="https://cloud.google.com/iam/docs/best-practices-service-accounts">Google Cloud: Best Practices for Managing Service Accounts</a></li>
+<li><a href="https://cloud.google.com/support/bulletins#gcp-2023-028">Chronicle cross-customer bucket access</a></li>
+</ul>
+<h3 id="risk-scoring">Risk Scoring<a class="headerlink" href="#risk-scoring" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Threat agents/Attack vectors<ul>
+<li>Exploitability - <strong>Hard</strong>. Successfully exploiting a Re-used NHI requires the threat agent to first gain access to the environment. Therefore, NHI Reuse is dependent on a separate initial access vector.</li>
+</ul>
+</li>
+<li>Security Weakness<ul>
+<li>Prevalence - <strong>Widespread</strong>. NHIs are very commonly reused because tailor fitting NHI for each workload is difficult. Common cases include the use of a single AWS IAM Role for multiple workloads or the use of a single API key for multiple workloads.</li>
+<li>Detectability - <strong>Hard</strong>. Detecting NHI reuse is difficult given the high variability of workloads that can be using the NHI.</li>
+</ul>
+</li>
+<li>Impacts<ul>
+<li>Technical - <strong>Low</strong>. NHI Reuse impact depends on the privilege of the associated NHI. If least-privilege is adopted, this impact is Low.</li>
+<li>Business - <strong>Specific</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-points">Data Points<a class="headerlink" href="#data-points" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cloud Vulnerability Database -</strong> Chronicle cross-customer bucket access</li>
+<li><strong>CSA NHI Report</strong> - 14% of organizations need consumer identification as the most important capability of an NHI tool. (11/16)</li>
+<li><strong>Recent Breach</strong> - .env file Breach - <a href="https://medium.com/@ronilichtman/large-scale-extortion-via-secrets-in-env-files-why-secret-vaults-just-arent-enough-9b4c568724ca">link</a></li>
+</ul>
 
 
 
