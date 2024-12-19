@@ -1,4 +1,4 @@
-# NHI5:2024 Overprivileged NHI
+# NHI5:2024 Environment Isolation NHI
 
 | Threat agents/Attack vectors                                                                                                                                                                     | Security Weakness                                                                                                             | Impacts                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -27,15 +27,10 @@ By isolating environments and the NHIs associated with them, organizations can s
 
 
 ## How To Prevent
-To prevent risks associated with unisolated NHIs, organizations should implement the following practices:
 * **Strict Environment Isolation for NHIs:**  Assign unique NHIs to each environment (development, testing, staging, production) to ensure that access credentials or identities in one environment cannot be reused in another.
 * **Apply the Principle of Least Privilege (PoLP):**  Grant NHIs only the minimal permissions required for their specific tasks within their designated environments. This minimizes the potential damage if an NHI is compromised.
 * **Enforce Environment-Specific Access Controls:** Configure access policies so that NHIs in non-production environments (e.g., testing) cannot interact with or access resources in the production environment.
 * **Segregate Infrastructure for Sensitive Resources:**  Use separate resource groups, subscriptions, or accounts to isolate production from non-production environments. This ensures that even with an NHI compromise, the blast radius is limited to its environment.
-* **Regularly Rotate and Manage NHI Credentials:** Implement automated rotation of NHI credentials, such as API keys or access tokens, to reduce the window of opportunity for an attacker.
-* **Audit and Monitor NHI Activities:** Continuously monitor the behavior and usage patterns of NHIs. Use logging and anomaly detection tools to identify and respond to unauthorized access attempts promptly.
-* **Secure Development and Testing Environments:** Protect non-production environments with robust security measures, including network segmentation, strong authentication, and limiting external access.
-* **Conduct Regular Security Reviews:** Periodically review and validate NHI configurations, access controls, and permissions to ensure they align with organizational security policies.
 
 By adhering to these practices, organizations can effectively reduce the risk posed by unisolated NHIs and maintain the security of their production environments.
 
