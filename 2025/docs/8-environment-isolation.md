@@ -1,4 +1,4 @@
-# NHI5:2024 Environment Isolation NHI
+# NHI8:2024 Environment Isolation NHI
 
 | Threat agents/Attack vectors                                                                                                                                                                     | Security Weakness                                                                                                             | Impacts                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -27,12 +27,10 @@ By isolating environments and the NHIs associated with them, organizations can s
 
 
 ## How To Prevent
-* **Strict Environment Isolation for NHIs:**  Assign unique NHIs to each environment (development, testing, staging, production) to ensure that access credentials or identities in one environment cannot be reused in another.
-* **Apply the Principle of Least Privilege (PoLP):**  Grant NHIs only the minimal permissions required for their specific tasks within their designated environments. This minimizes the potential damage if an NHI is compromised.
+* **Strict Environment Isolation for NHIs:** Assign unique NHIs to each environment (development, testing, staging, production) to ensure that access credentials or identities in one environment cannot be reused in another.
+* **Apply the Principle of Least Privilege (PoLP):** Grant NHIs only the minimal permissions required for their specific tasks within their designated environments. This minimizes the potential damage if an NHI is compromised.
 * **Enforce Environment-Specific Access Controls:** Configure access policies so that NHIs in non-production environments (e.g., testing) cannot interact with or access resources in the production environment.
-* **Segregate Infrastructure for Sensitive Resources:**  Use separate resource groups, subscriptions, or accounts to isolate production from non-production environments. This ensures that even with an NHI compromise, the blast radius is limited to its environment.
-
-By adhering to these practices, organizations can effectively reduce the risk posed by unisolated NHIs and maintain the security of their production environments.
+* **Segregate Infrastructure for Sensitive Resources:** Use separate resource groups, subscriptions, or accounts to isolate production from non-production environments. This ensures that even with an NHI compromise, the blast radius is limited to its environment.
 
 
 ## References
