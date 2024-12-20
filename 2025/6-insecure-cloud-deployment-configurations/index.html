@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nhi62025-insecure-cloud-deployment-configurations" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -466,6 +471,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NHI6:2025 Insecure Cloud Deployment Configurations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -476,6 +494,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-attack-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Attack Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How To Prevent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -598,6 +680,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-attack-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Attack Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How To Prevent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -615,9 +752,67 @@
   
 
 
-  <h1>NHI6:2025 Insecure Cloud Deployment Configurations</h1>
-
-<p>TBA</p>
+<h1 id="nhi62025-insecure-cloud-deployment-configurations">NHI6:2025 Insecure Cloud Deployment Configurations<a class="headerlink" href="#nhi62025-insecure-cloud-deployment-configurations" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Threat Agents &amp; Attack Vectors</th>
+<th>Security Weakness</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exploitability: <strong>Average</strong></td>
+<td>Prevalence: <strong>Common</strong><br>Detectability: <strong>Easy</strong></td>
+<td>Technical Impact: <strong>Severe</strong><br>Business: <strong>Specific</strong></td>
+</tr>
+<tr>
+<td>Generally, discovering misconfigured pipelines is difficult because they are set up within the organization's confines. However, once a threat actor gains simple read access, they can relatively easily reconnoiter the environment and discover vulnerable configurations.</td>
+<td>Risks in managing CI/CD pipelines have gained awareness, and as a result, many CI/CD providers support OIDC-based access and push their users to use it. However, many organizations still need to catch up and use hard-coded credentials or insecure OIDC-based authentication. <br> The CI/CD misconfigurations happen on the organizations' “home turf” and thus are easy to search for. Furthermore, current known misconfigurations are well documented.</td>
+<td>Successfully compromising a CI/CD misconfiguration could lead to supply chain attacks or rogue access to environments, as most pipelines are granted high-privilege access.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>Continuous Integration and Continuous Deployment (CI/CD) applications enable developers to automate the process of building, testing, and deploying code to production environments. These integrations often require the CI/CD pipelines to authenticate with cloud services, which is typically achieved using either dedicated service accounts with static credentials or OpenID Connect (OIDC) for federated identity management.</p>
+<p>Using dedicated service accounts with static credentials in CI/CD pipelines is considered insecure. Static credentials can be inadvertently exposed through code repositories, logs, or configuration files. If compromised, these credentials can provide attackers with persistent and potentially privileged access to production environments, bypassing multi-factor authentication (MFA) and other security measures.</p>
+<p>OIDC offers a more secure alternative by allowing CI/CD pipelines to obtain short-lived, dynamically generated tokens for authentication. However, misconfigurations in OIDC setups can introduce vulnerabilities. If the identity tokens are not properly validated or there are no strict conditions on token claims—such as the <code>sub</code> (subject) claim—unauthorized users might exploit these weaknesses to gain access to cloud resources.</p>
+<p>Proper configuration and management of CI/CD integrations are crucial to maintain the security of the production environment. This includes enforcing the principle of least privilege, implementing robust credential management practices, and ensuring that OIDC tokens are properly validated and restricted to authorized entities.</p>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>AWS IAM Roles with Misconfigured OIDC Trust Relationships</strong>: AWS roles that allow OIDC access through <code>AssumeRoleWithWebIdentity</code> can be misconfigured if they trust public OIDC providers like GitHub or GitLab without properly restricting the <code>sub</code> claim. Without this restriction, any user on these platforms could potentially assume the role, leading to unauthorized access to AWS resources.</p>
+</li>
+<li>
+<p><strong>Hard-Coded Azure Service Principal Credentials</strong>: An Azure Service Principal intended for use within a GitHub Action might have its credentials hard-coded into the pipeline's configuration files. If these files are stored in a publicly accessible repository or are otherwise exposed, attackers can obtain the credentials and authenticate as the service principal, gaining access to Azure resources with the associated permissions.</p>
+</li>
+</ul>
+<h2 id="how-to-prevent">How To Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Use OIDC for Secure Authentication</strong></li>
+<li>Replace static credentials with short-lived, dynamically generated tokens using OIDC.</li>
+<li>Validate tokens strictly, including issuer, audience, and claims.</li>
+<li><strong>Enforce Least Privilege</strong></li>
+<li>Limit CI/CD pipeline permissions to only what is necessary.</li>
+<li>Restrict trust relationships in IAM roles and OIDC configurations.</li>
+<li><strong>Avoid Hard-Coded Credentials</strong></li>
+<li>Store secrets securely with tools like AWS Secrets Manager, Azure Key Vault, or HashiCorp Vault.</li>
+<li>Regularly scan repositories and configurations for exposed credentials.</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><a href="https://hackingthe.cloud/aws/exploitation/Misconfigured_Resource-Based_Policies/exploiting_misconfigured_gitlab_oidc_aws_iam_roles/">Exploiting Misconfigured GitLab OIDC AWS IAM Roles</a></p>
+</li>
+<li>
+<p><a href="https://github.com/aws-actions/configure-aws-credentials#security-recommendations">Security Recommendations for AWS Access in GitHub Actions</a></p>
+</li>
+</ul>
+<h2 id="data-points">Data Points<a class="headerlink" href="#data-points" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>CSA NHI Report</strong> - 32% of times configuration error was the cause for NHI-related security incidents. (4/10)</li>
+</ul>
 
 
 
