@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nhi102025-human-use-of-nhi" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -546,6 +551,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NHI10:2025 Human Use of NHI
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -556,6 +574,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Prevent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -598,6 +680,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Prevent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Points
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -615,9 +752,62 @@
   
 
 
-  <h1>NHI10:2025 Human Use of NHI</h1>
-
-<p>TBA</p>
+<h1 id="nhi102025-human-use-of-nhi">NHI10:2025 Human Use of NHI<a class="headerlink" href="#nhi102025-human-use-of-nhi" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Threat Agents &amp; Attack Vectors</th>
+<th>Security Weakness</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exploitability: <strong>Hard</strong></td>
+<td>Prevalence: <strong>Common</strong><br>Detectability: <strong>Hard</strong></td>
+<td>Technical Impact: <strong>Low</strong><br>Business: <strong>Specific</strong></td>
+</tr>
+<tr>
+<td>Successfully exploiting Human use of NHI requires the threat agent first to gain access to the environment. Therefore, Human use of NHI attacks depends on a separate initial access vector.</td>
+<td>Developers often impersonate service accounts to debug issues.<br>Most NHI providers do not provide tooling to differentiate between workloads assuming the NHI and humans assuming the NHI.</td>
+<td>Human use of NHI impact depends on the privilege of the associated NHI.<br>If least-privilege is adopted, this impact is Low.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>Non-human identities (NHIs)—such as service accounts, API tokens, and workload identities—are designed for programmatic access to cloud resources and services. They enable applications, services, and automated processes to function securely without human intervention. However, during application development and maintenance, developers or administrators may misuse these NHIs for manual tasks that should be performed using individual human identities with appropriate privileges.
+This practice introduces significant security risks: 
+- Elevated privileges beyond necessity
+ - Lack of detailed auditing and accountability
+ - Indistinguishable activity between humans and automation
+ - Obfuscation by attackers</p>
+<h2 id="example-scenarios">Example Scenarios<a class="headerlink" href="#example-scenarios" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Administrators Using Service Account Credentials:</strong>  An IT administrator uses a service account's credentials to log into cloud management consoles for convenience. This service account has extensive permissions intended for automated deployment tasks. The administrator now has access beyond their role's requirements, and any actions they perform are logged under the service account, obscuring accountability.</li>
+<li><strong>Developers Executing Commands with NHIs:</strong> A developer manually runs scripts or commands using an NHI that has permissions to production environments. If the developer makes an error or performs unauthorized changes, it becomes difficult to trace the activity back to them, as logs attribute the actions to the NHI.</li>
+<li><strong>Shared API Tokens Among Team Members:</strong> A team shares an API token associated with a service account to access certain resources quickly. This token has broad access rights. If any team member's environment is compromised, the attacker can use the shared token to access sensitive systems, and it would be challenging to identify the source of the breach.</li>
+<li><strong>Bypassing Security Controls:</strong> An employee uses an NHI to access resources that are restricted under their user account due to policies like MFA requirements or IP address restrictions. This undermines the organization's security posture and can lead to unauthorized data access.</li>
+<li><strong>Attackers Leveraging NHIs for Persistence:</strong> After compromising an environment, an attacker obtains NHI credentials and uses them to maintain access. Since NHIs are not subject to regular password changes or MFA, the attacker can persist in the environment undetected for extended periods.</li>
+</ul>
+<h2 id="how-to-prevent">How to Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Use dedicated identities:</strong> Use dedicated human identities with appropriate roles and permissions for debugging or maintenance tasks.</li>
+<li><strong>Audit and Monitor NHI Activity:</strong> Use tools or platforms that support auditing and tracking of NHI usage, making human use detectable and accountable.</li>
+<li><strong>Use Context-Aware Access Controls:</strong> Use conditional access policies that detect and block human access to NHIs based on suspicious patterns.</li>
+<li><strong>Educate Developers and Administrators:</strong> Provide training on the risks of using NHIs manually and provide alternative access methods to ensure secure access practices.</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/service-accounts">Microsoft Azure: Best Practices for Securing Service Accounts</a></li>
+<li><a href="https://aws.amazon.com/blogs/security/best-practices-for-managing-aws-access-keys/">AWS Security Blog: Best Practices for Managing AWS Access Keys</a></li>
+<li><a href="https://cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys">Google Cloud: Best practices for managing service account keys</a></li>
+</ul>
+<h2 id="data-points">Data Points<a class="headerlink" href="#data-points" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://cioinfluence.com/security/anetac-report-75-percent-of-organizations-misuse-service-accounts-leading-to-critical-security-risks/">Anetac Report: 75 Percent of Organizations Misuse Service Accounts, Leading to Critical Security Risks</a></li>
+<li>CSA NHI Report - 32% of organizations put service accounts as most challenging to manage. (1/16)</li>
+<li>CSA NHI Report - 26% of organizations believe that over 50% of their service accounts are over-privileged</li>
+</ul>
 
 
 
