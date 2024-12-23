@@ -11,7 +11,7 @@ pitch: The primary goal of the "OWASP Non-Human Identities Top 10" document is t
 
 <div class="alert">
     <p style="text-align:center">
-We're thrilled to introduce the [OWASP Non-Human Identities Top 10 for 2025]({{ site.baseurl }}/2025)!
+We're thrilled to introduce the <a href="./2025/">OWASP Non-Human Identities Top 10 for 2025</a>!
     </p>
 </div>
 
