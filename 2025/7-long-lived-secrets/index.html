@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#nhi72025-long-lived-secrets" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -486,6 +491,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NHI7:2025 Long-Lived Secrets
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -496,6 +514,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-attack-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Attack Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How To Prevent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data points
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -578,6 +660,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-attack-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Attack Scenarios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-prevent" class="md-nav__link">
+    <span class="md-ellipsis">
+      How To Prevent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data points
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -595,9 +732,65 @@
   
 
 
-  <h1>NHI7:2025 Long-Lived Secrets</h1>
-
-<p>TBA</p>
+<h1 id="nhi72025-long-lived-secrets">NHI7:2025 Long-Lived Secrets<a class="headerlink" href="#nhi72025-long-lived-secrets" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th>Threat agents/Attack vectors</th>
+<th>Security Weakness</th>
+<th>Impacts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exploitability - <strong>Hard</strong></td>
+<td>Prevalence - <strong>Widespread</strong> : Detectability - <strong>Easy</strong></td>
+<td>Technical - <strong>Severe</strong> : Business - <strong>Specific</strong></td>
+</tr>
+<tr>
+<td>Successfully exploiting a Long-Lived Secret requires the threat agent to first gain access to the secret value. Therefore, Long-Lived Secret attacks depend on a separate initial access vector.</td>
+<td>Long-Lived Secrets are extremely common in modern environments. This is due to the challenges associated with rotation and low availability of ephemeral solutions. Detecting Long-Lived Secrets is easy given the majority of secret managers enable users to see the amount of time that has passed since rotation.</td>
+<td>Secrets tend to hold credentials for high-impact NHI (such as API Keys and Database connection strings).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>Long-lived Secrets refers to the use of sensitive NHIs such as API keys, tokens, encryption keys, and certificates with expiration dates that are too far in the future or that don’t expire at all. Developers frequently use these secrets to enable applications to authenticate and interact with various services and resources within an organization. Oftentimes, these secrets can be breached or leak (see <a href="https://owasp.org/www-project-non-human-identities-top-10/2025/2-secret-leakage/">Secret Leakage</a>). If a breached secret is long-lived, it provides attackers with access to sensitive services without any time constraints.</p>
+<h2 id="example-attack-scenarios">Example Attack Scenarios<a class="headerlink" href="#example-attack-scenarios" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Privilege Escalation via Stale Sensitive Access Token:</strong> An attacker with low-level privileges in the corporate network identifies a year-old data dump. The dump contains a sensitive Access Token with admin privileges. The attacker leverages the sensitive Access Token to raise privileges in the network.</li>
+<li><strong>Session Hijacking via Stolen Long-Lived Cookies:</strong> A web session cookie is set to be long-lived. An infostealer campaign dumps cookies from one browser in the corporate network. The infostealer then sells that cookie to an attacker who leverages the session cookie to breach the corporate network.</li>
+</ul>
+<h2 id="how-to-prevent">How To Prevent<a class="headerlink" href="#how-to-prevent" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Enable Automated Key Rotation:</strong> Automating the rotation of API keys or credentials using cloud-native tools or simple scripts reduces manual effort and ensures credentials are not long-lived.</li>
+<li><strong>Implement Short-Lived Credentials:</strong> Many cloud platforms like AWS and Azure provide built-in mechanisms to use temporary credentials that automatically expire and refresh after performing the task they made for. </li>
+<li><strong>Adopt Zero Trust Principles:</strong> Require re-authentication for NHIs accessing sensitive resources or performing high-risk actions.</li>
+<li><strong>Enforce Principle of Least Privilege:</strong> Grant only the minimum permissions necessary for the NHI to perform its tasks, reducing the impact of credential compromise.</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Rabbit Inc. API Key Leak (June 2024) - <a href="https://www.doppler.com/blog/updated-data-breaches-caused-by-leaks-in-2024">link</a></li>
+<li>Hugging Face Space Secrets Leak Disclosure (May 2024) - <a href="https://huggingface.co/blog/space-secrets-disclosure">link</a></li>
+<li>Snowstorm surrounding the recent Snowflake “hack” (May 2024) - <a href="https://medium.com/@ronilichtman/snowstorm-surrounding-the-recent-snowflake-hack-ab7e51e0c5be">link</a></li>
+<li>Employee Personal GitHub Repos Expose Internal Azure and Red Hat Secrets (May 2024) - <a href="https://www.aquasec.com/blog/github-repos-expose-azure-and-red-hat-secrets/">link</a></li>
+<li>Microsoft SAS Token Breach (September 2023) - <a href="https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers">link</a></li>
+<li>CircleCI Breach (January 2023) - <a href="https://circleci.com/blog/jan-4-2023-incident-report/">link</a></li>
+<li>Microsoft Azure Site Recovery Privilege Escalation (July 2022) - <a href="https://www.tenable.com/security/research/tra-2022-26">link</a></li>
+</ul>
+<h2 id="data-points">Data points<a class="headerlink" href="#data-points" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.datadoghq.com/state-of-cloud-security/">Datadog State of the Cloud 2024</a></li>
+<li>46% of AWS orgs users use long-lived console credentials</li>
+<li>60% of keys across cloud providers have age &gt; 1 year</li>
+<li><a href="https://s3.amazonaws.com/content-production.cloudsecurityalliance/22j8ue25fxvafdnirpgoqtdv7l1u?response-content-disposition=inline%3B%20filename%3D%22The%20State%20of%20Non-Human%20Identity%20Security%2020240917.pdf%22%3B%20filename%2A%3DUTF-8%27%27The%2520State%2520of%2520Non-Human%2520Identity%2520Security%252020240917.pdf&amp;response-content-type=application%2Fpdf&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAS6XDIRHKHO4F5SU4%2F20241211%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241211T163927Z&amp;X-Amz-Expires=300&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=394370ac74a7a3f24385341bdee52ca01958c4859595f1f9969ffefdaa6d6f2f">CSA NHI Report</a> </li>
+<li>45% of times lack of credential rotation were the cause for NHI-related security incidents (1/10)</li>
+<li>26% of organizations need management of secrets lifecycle as the most important capability of an NHI tool (1/16)</li>
+<li>51% of organizations have no formal process to offboard or revoke long-lived API keys</li>
+<li><a href="https://orca.security/wp-content/uploads/2022/09/2022-State-of-Public-Cloud-Security-Report.pdf">Orca Security State of the Cloud Security report 2022</a></li>
+<li>80% of organizations have KMS rotation disabled</li>
+<li>79% of organizations have at least one access key older than 90 days</li>
+</ul>
 
 
 
