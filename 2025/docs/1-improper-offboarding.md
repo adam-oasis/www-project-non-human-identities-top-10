@@ -2,7 +2,7 @@
 
 | Threat Agents & Attack Vectors                    | Security Weakness                                                                                          | Impact                                         |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| Exploitability: **Easy**            | Prevalence: **Widespread**<br>Detectability: **Hard**                       | Technical Impact: **Severe**     |
+| Exploitability: **Easy**            | Prevalence: **Widespread**<br>Detectability: **Hard**                       | Technical: **Severe**<br>Business: **Specific**     |
 | Exploiting an improperly offboarded NHI greatly depends on context. Considering the case of an inside threat, it’s quite simple to identify what necessary credentials are needed to exploit the improperly offboarded identity. | The current capabilities of offboarding NHIs, such as service accounts, are lackluster, and organizations rarely use existing possibilities. Thus, many NHIs are not properly offboarded after they are no longer needed or once the original owner has left.<br>Security teams are lacking tools to detect old NHIs that were not properly offboarded. Existing techniques of detecting such NHIs rely on incomplete information that takes a long time to compile.      | Due to the deep insight a potential inside threat has of the organization, exploiting improperly offboarded NHIs could lead to compromise of critical systems, exfiltration of sensitive data and usage of advanced persistence methods. |
 
 ## Description

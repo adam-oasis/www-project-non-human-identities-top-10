@@ -2,7 +2,7 @@
 
 | Threat Agents & Attack Vectors                    | Security Weakness                                                                                          | Impact                                         |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| Exploitability: **Easy**            | Prevalence: **Widespread**<br>Detectability: **Easy**                       | Technical Impact: **Moderate**<br>Business: **Specific**     |
+| Exploitability: **Easy**            | Prevalence: **Widespread**<br>Detectability: **Easy**                       | Technical: **Moderate**<br>Business: **Specific**     |
 | Once an attacker detects an NHI using insecure authentication, they can utilize known techniques and tools to abuse and compromise the NHI. | Legacy applications are present in almost every authorization and usually use the legacy/insecure authentication methods like the implicit OAuth flow, or a service account without MFA.<br>Depending on the type of insecure authentication, detectability can vary between available simple discovery capabilities, to specific insecure authentication offenders that are difficult to identify.      | Insecure protocols are commonly used to facilitate sensitive processes that are given high access. Successful exploitation of an NHI using insecure authentication can lead to account takeover or privilege escalation. 
 
 ## Description

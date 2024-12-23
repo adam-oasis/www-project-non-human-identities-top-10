@@ -2,7 +2,7 @@
 
 | Threat Agents & Attack Vectors                    | Security Weakness                                                                                          | Impact                                         |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| Exploitability: **Hard**            | Prevalence: **Common**<br>Detectability: **Hard**                       | Technical Impact: **Low**<br>Business: **Specific**     |
+| Exploitability: **Hard**            | Prevalence: **Common**<br>Detectability: **Hard**                       | Technical: **Low**<br>Business: **Specific**     |
 | Successfully exploiting Human use of NHI requires the threat agent first to gain access to the environment. Therefore, Human use of NHI attacks depends on a separate initial access vector. | Developers often impersonate service accounts to debug issues.<br>Most NHI providers do not provide tooling to differentiate between workloads assuming the NHI and humans assuming the NHI.      | Human use of NHI impact depends on the privilege of the associated NHI.<br>If least-privilege is adopted, this impact is Low. 
 
 ## Description
