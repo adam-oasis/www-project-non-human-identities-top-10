@@ -11,3 +11,6 @@
 * 2024-Dec-20: NHI:10 - Human Use of NHI page uploaded
 * 2024-Dec-20: NHI:8 - Environment Isolation page uploaded
 * 2024-Dec-20: NHI:2 - Secret Leakage page uploaded
+* 2024-Dec-23: NHI:7 - Long-Lived secret page uploaded
+* 2024-Dec-23: Meta pages uploaded.
+* 2024-Dec-24: The OWASP NHI Top 10 2025 Project is live!
