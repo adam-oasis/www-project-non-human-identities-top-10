@@ -41,17 +41,6 @@ To minimize these risks, it's essential to assign unique NHIs to each applicatio
 * [Google Cloud: Best Practices for Managing Service Accounts](https://cloud.google.com/iam/docs/best-practices-service-accounts)
 * [Chronicle cross-customer bucket access](https://cloud.google.com/support/bulletins#gcp-2023-028)
 
-### Risk Scoring
-
-* Threat agents/Attack vectors
-    * Exploitability \- **Hard**. Successfully exploiting a Re-used NHI requires the threat agent to first gain access to the environment. Therefore, NHI Reuse is dependent on a separate initial access vector.
-* Security Weakness
-    * Prevalence \- **Widespread**. NHIs are very commonly reused because tailor fitting NHI for each workload is difficult. Common cases include the use of a single AWS IAM Role for multiple workloads or the use of a single API key for multiple workloads.
-    * Detectability \- **Hard**. Detecting NHI reuse is difficult given the high variability of workloads that can be using the NHI.
-* Impacts
-    * Technical \- **Low**. NHI Reuse impact depends on the privilege of the associated NHI. If least-privilege is adopted, this impact is Low.
-    * Business \- **Specific**.
-
 ### Data Points
 
 - **Cloud Vulnerability Database \-** Chronicle cross-customer bucket access
