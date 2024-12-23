@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ranking-criteria" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -286,6 +291,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Ranking Criteria
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -296,6 +314,49 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#criteria-and-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criteria and Terminology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Criteria and Terminology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of Assumptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -561,26 +622,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../acknowledgments/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Acknowledgments
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -598,6 +639,40 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#criteria-and-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criteria and Terminology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Criteria and Terminology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation-of-assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of Assumptions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -615,9 +690,51 @@
   
 
 
-  <h1>Ranking Criteria</h1>
-
-<p>TBD</p>
+<h1 id="ranking-criteria">Ranking Criteria<a class="headerlink" href="#ranking-criteria" title="Permanent link">&para;</a></h1>
+<p>The OWASP NHI Top-10 2025 project used OWASP's <a href="https://owasp.org/www-community/OWASP_Risk_Rating_Methodology">Risk Rating Methodology</a> to define and evaluate the risk criteria.</p>
+<p>The goal of the project was to identify, prioritize, and rank risks associated with non-human identities (NHIs). To achieve this, we focused exclusively on inherent risk factors, without considering the likelihood of a specific threat scenario occurring or the organization-specific nuances of managing NHIs. </p>
+<p>This methodology ensures a consistent approach that highlights the most pressing risks but remains adaptable to various environments.</p>
+<h2 id="criteria-and-terminology">Criteria and Terminology<a class="headerlink" href="#criteria-and-terminology" title="Permanent link">&para;</a></h2>
+<p>The table below summarizes the criteria and terminology used in the ranking process:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Threat Agents: Exploitability</strong></th>
+<th><strong>Security Weakness: Prevalence</strong></th>
+<th><strong>Security Weakness: Detectability</strong></th>
+<th><strong>Impact: Technical</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Easy: <strong>3</strong></td>
+<td>Widespread: <strong>3</strong></td>
+<td>Hard: <strong>3</strong></td>
+<td>Severe: <strong>3</strong></td>
+</tr>
+<tr>
+<td>Average: <strong>2</strong></td>
+<td>Common: <strong>2</strong></td>
+<td>Average: <strong>2</strong></td>
+<td>Moderate: <strong>2</strong></td>
+</tr>
+<tr>
+<td>Hard: <strong>1</strong></td>
+<td>Uncommon: <strong>1</strong></td>
+<td>Easy: <strong>1</strong></td>
+<td>Low: <strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="explanation-of-assumptions">Explanation of Assumptions<a class="headerlink" href="#explanation-of-assumptions" title="Permanent link">&para;</a></h3>
+<p>To maintain consistency, specific assumptions were applied during the ranking process:</p>
+<ul>
+<li><strong>Exploitability:</strong> Scores assume that the organization is already vulnerable to the risk and that the threat actor has sufficient knowledge to attempt exploitation.</li>
+<li><strong>Impact:</strong> The impact scores reflect a "worst-case scenario," considering the most severe consequences that could arise from the risk.</li>
+<li><strong>Prevalence:</strong> The prevalence ratings focus on how widespread the security weakness is across environments, without factoring in mitigation efforts.</li>
+<li><strong>Detectability:</strong> This considers how challenging it would be for an organization to identify the security weakness, assuming usual detection mechanisms are in place.</li>
+</ul>
+<p>By grounding the ranking process in these assumptions, we aim to provide a clear and actionable framework for understanding and addressing risks related to non-human identities.</p>
 
 
 

@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#owasp-top-10-non-human-identities-risks-2025" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -346,6 +351,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -561,26 +568,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../acknowledgments/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Acknowledgments
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -597,6 +584,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
 </nav>
@@ -615,9 +604,57 @@
   
 
 
-  <h1>OWASP Non-Human Identities Top 10 - 2025</h1>
-
-<p>TBD</p>
+<h1 id="owasp-top-10-non-human-identities-risks-2025">OWASP Top 10 Non-Human Identities Risks - 2025<a class="headerlink" href="#owasp-top-10-non-human-identities-risks-2025" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th><strong>Risk</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../1-improper-offboarding/">NHI1:2025 Improper Offboarding</a></td>
+<td>Improper offboarding refers to the inadequate deactivation or removal of non-human identities (NHIs) such as service accounts and access keys when they are no longer needed. Unmonitored and deprecated services may remain vulnerable, and their associated NHIs can be exploited by attackers to gain unauthorized access to sensitive systems and data.</td>
+</tr>
+<tr>
+<td><a href="../2-secret-leakage/">NHI2:2025 Secret Leakage</a></td>
+<td>Secret Leakage refers to the leakage of sensitive NHIs such as API keys, tokens, encryption keys, and certificates to unsanctioned data stores throughout the software development lifecycle. <br/> When secrets are leaked — for instance, hard-coded into source code, stored in plain text configuration files, or sent over public chat applications — they become susceptible to exposure.</td>
+</tr>
+<tr>
+<td><a href="../3-vulnerable-third-party-nhi/">NHI3:2025 Vulnerable Third-Party NHI</a></td>
+<td>Third-party non-human identities (NHIs) are extensively integrated into the development workflow, both through the use of integrated development environments (IDEs) and their extensions and also through the use of 3rd party SaaS. <br/> If a third-party extension is compromised—whether through a security vulnerability or a malicious update—it can be exploited to steal these credentials or misuse the granted permissions.</td>
+</tr>
+<tr>
+<td><a href="../4-insecure-authentication/">NHI4:2025 Insecure Authentication</a></td>
+<td>Developers frequently integrate internal and external (third-party) services into their applications. These services require access to resources within these systems, necessitating authentication credentials. <br/> However, some authentication methods are deprecated, vulnerable to known attacks, or considered weak due to outdated security practices. Utilizing insecure or obsolete authentication mechanisms can expose organizations to significant risks.</td>
+</tr>
+<tr>
+<td><a href="../5-overprivileged-nhi/">NHI5:2025 Overprivileged NHI</a></td>
+<td>During application development and maintenance, developers or administrators may assign NHIs with significantly more privileges than required for their function. When an over-privileged NHI is compromised — whether through vulnerabilities in the application, malware, or other security breaches — attackers can exploit the excessive permissions.</td>
+</tr>
+<tr>
+<td><a href="../6-insecure-cloud-deployment-configurations/">NHI6:2025 Insecure Cloud Deployment Configurations</a></td>
+<td>Continuous Integration and Continuous Deployment (CI/CD) applications enable developers to automate the process of building, testing, and deploying code to production environments. <br/> These integrations often require authentication with cloud services, typically achieved using static credentials or OpenID Connect (OIDC). <br/> Static credentials can be inadvertently exposed through code repositories, logs, or configuration files. If compromised, these credentials can provide attackers with persistent and potentially privileged access to production environments. <br /> While OIDC offers a more secure alternative, if the identity tokens are not properly validated or there are no strict conditions on token claims unauthorized users might exploit these weaknesses to gain access.</td>
+</tr>
+<tr>
+<td><a href="../7-long-lived-secrets/">NHI7:2025 Long-Lived Secrets</a></td>
+<td>Long-lived Secrets refers to the use of sensitive NHIs such as API keys, tokens, encryption keys, and certificates with expiration dates that are too far in the future or that don’t expire at all. <br/> If a breached secret is long-lived, it provides attackers with access to sensitive services without any time constraints.</td>
+</tr>
+<tr>
+<td><a href="../8-environment-isolation/">NHI8:2025 Environment Isolation</a></td>
+<td>Environment isolation is a fundamental security practice in cloud application deployment, where separate environments are used for development, testing, staging, and production. <br/> NHIs are often utilized during the deployment process and throughout an application's lifecycle. However, reusing the same NHIs across multiple environments—especially between testing and production—can introduce significant security vulnerabilities.</td>
+</tr>
+<tr>
+<td><a href="../9-nhi-reuse/">NHI9:2025 NHI Reuse</a></td>
+<td>Reusing the same NHI across different applications, services, or components — even if they are deployed together — introduces significant security risks. If an NHI is compromised in one area, an attacker can exploit it to gain unauthorized access to other parts of the system that use the same credentials.</td>
+</tr>
+<tr>
+<td><a href="../10-human-use-of-nhi/">NHI10:2025 Human Use of NHI</a></td>
+<td>During application development and maintenance, developers or administrators may misuse NHIs for manual tasks that should be performed using individual human identities with appropriate privileges. This practice introduces significant security risks such as elevated privileges for NHIs, lack of auditing and accountability due to indistinguishable activity between humans and automation.</td>
+</tr>
+</tbody>
+</table>
 
 
 
