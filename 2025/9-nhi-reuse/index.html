@@ -608,15 +608,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#risk-scoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Risk Scoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#data-points" class="md-nav__link">
     <span class="md-ellipsis">
       Data Points
@@ -722,15 +713,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#risk-scoring" class="md-nav__link">
-    <span class="md-ellipsis">
-      Risk Scoring
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#data-points" class="md-nav__link">
     <span class="md-ellipsis">
       Data Points
@@ -815,23 +797,6 @@
 <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal">Azure Service Principal Security</a></li>
 <li><a href="https://cloud.google.com/iam/docs/best-practices-service-accounts">Google Cloud: Best Practices for Managing Service Accounts</a></li>
 <li><a href="https://cloud.google.com/support/bulletins#gcp-2023-028">Chronicle cross-customer bucket access</a></li>
-</ul>
-<h3 id="risk-scoring">Risk Scoring<a class="headerlink" href="#risk-scoring" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Threat agents/Attack vectors<ul>
-<li>Exploitability - <strong>Hard</strong>. Successfully exploiting a Re-used NHI requires the threat agent to first gain access to the environment. Therefore, NHI Reuse is dependent on a separate initial access vector.</li>
-</ul>
-</li>
-<li>Security Weakness<ul>
-<li>Prevalence - <strong>Widespread</strong>. NHIs are very commonly reused because tailor fitting NHI for each workload is difficult. Common cases include the use of a single AWS IAM Role for multiple workloads or the use of a single API key for multiple workloads.</li>
-<li>Detectability - <strong>Hard</strong>. Detecting NHI reuse is difficult given the high variability of workloads that can be using the NHI.</li>
-</ul>
-</li>
-<li>Impacts<ul>
-<li>Technical - <strong>Low</strong>. NHI Reuse impact depends on the privilege of the associated NHI. If least-privilege is adopted, this impact is Low.</li>
-<li>Business - <strong>Specific</strong>.</li>
-</ul>
-</li>
 </ul>
 <h3 id="data-points">Data Points<a class="headerlink" href="#data-points" title="Permanent link">&para;</a></h3>
 <ul>
