@@ -1,7 +1,7 @@
 ### Non-Human Identities Top 10 Information
 
-<i class="fas fa-egg" style="font-size: 1.3em; color:#f7b73c;"></i>
-<span style="font-size: 1.3em;">Lab Project</span>
+<i class="fas fa-egg" style="font-size: 1.3em; color:#53aae5;"></i>
+<span style="font-size: 1.3em;">Incubator Project</span>
 ![Documentation Project][doc-proj-logo]
 
 <i class="fas fa-toolbox" style="color:#233e81;"></i> [Builders][builders]
