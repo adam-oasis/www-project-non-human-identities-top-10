@@ -49,13 +49,13 @@ Exposed secrets can lead to significant security risks. If a secret is leaked, w
 
 ## Data points
 * [CSA NHI Report](https://cloudsecurityalliance.org/artifacts/state-of-non-human-identity-security-survey-report)
-   * 31% of times poor secrets management was the cause for NHI-related security incidents. (6/10)
-   * 21% of organizations put service accounts as most challenging to manage. (6/16)
-   * 26% of organizations need management of secrets lifecycle as the most important capability of an NHI tool. (1/16)
-   * 37% of organizations report secrets are stored in environment variables or hard-coded into application code.
+    * 31% of times poor secrets management was the cause for NHI-related security incidents. (6/10)
+    * 21% of organizations put service accounts as most challenging to manage. (6/16)
+    * 26% of organizations need management of secrets lifecycle as the most important capability of an NHI tool. (1/16)
+    * 37% of organizations report secrets are stored in environment variables or hard-coded into application code.
 * Verizon DBIR
-   * 21% of breaches initial action was use of stolen creds (1/10)
+    * 21% of breaches initial action was use of stolen creds (1/10)
 * Recent Breaches
-   * MSFT SAS Token Breach - [link](https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers)
-   * Uber Breach - [link](https://www.upguard.com/blog/what-caused-the-uber-data-breach)
-   * Internet Archive breach - [link](https://www.bleepingcomputer.com/news/security/internet-archive-hacked-data-breach-impacts-31-million-users/)
+    * MSFT SAS Token Breach - [link](https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers)
+    * Uber Breach - [link](https://www.upguard.com/blog/what-caused-the-uber-data-breach)
+    * Internet Archive breach - [link](https://www.bleepingcomputer.com/news/security/internet-archive-hacked-data-breach-impacts-31-million-users/)
