@@ -23,3 +23,4 @@ Individuals that provided a significant contribution to the project:
 | Tomer Yahalom  | Astrix Security | [LinkedIn](https://www.linkedin.com/in/tomer-yahalom-4622b0178/) |
 | Danielle Guetta  | Astrix Security | [LinkedIn](https://www.linkedin.com/in/danielle-guetta-94108310/) |
 | Bar Kaduri  | Orca Security | [LinkedIn](https://www.linkedin.com/in/bar-kaduri) |
+| Yonatan Yosef  | Orca Security | [LinkedIn](https://www.linkedin.com/in/yonatan-yosef-93a028188/) |

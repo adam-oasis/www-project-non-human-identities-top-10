@@ -48,14 +48,14 @@ Exposed secrets can lead to significant security risks. If a secret is leaked, w
 * AWS Secrets Manager - [link](https://aws.amazon.com/secrets-manager/)
 
 ## Data points
-* [CSA NHI Report](https://s3.amazonaws.com/content-production.cloudsecurityalliance/22j8ue25fxvafdnirpgoqtdv7l1u?response-content-disposition=inline%3B%20filename%3D%22The%20State%20of%20Non-Human%20Identity%20Security%2020240917.pdf%22%3B%20filename%2A%3DUTF-8%27%27The%2520State%2520of%2520Non-Human%2520Identity%2520Security%252020240917.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAS6XDIRHKHO4F5SU4%2F20241211%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241211T163927Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=394370ac74a7a3f24385341bdee52ca01958c4859595f1f9969ffefdaa6d6f2f)
-  * 31% of times poor secrets management was the cause for NHI-related security incidents. (6/10)
-  * 21% of organizations put service accounts as most challenging to manage. (6/16)
-  * 26% of organizations need management of secrets lifecycle as the most important capability of an NHI tool. (1/16)
-  * 37% of organizations report secrets are stored in environment variables or hard-coded into application code.
+* [CSA NHI Report](https://cloudsecurityalliance.org/artifacts/state-of-non-human-identity-security-survey-report)
+   * 31% of times poor secrets management was the cause for NHI-related security incidents. (6/10)
+   * 21% of organizations put service accounts as most challenging to manage. (6/16)
+   * 26% of organizations need management of secrets lifecycle as the most important capability of an NHI tool. (1/16)
+   * 37% of organizations report secrets are stored in environment variables or hard-coded into application code.
 * Verizon DBIR
-  * 21% of breaches initial action was use of stolen creds (1/10)
+   * 21% of breaches initial action was use of stolen creds (1/10)
 * Recent Breaches
-  * MSFT SAS Token Breach - [link](https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers)
-  * Uber Breach - [link](https://www.upguard.com/blog/what-caused-the-uber-data-breach)
-  * Internet Archive breach - [link](https://www.bleepingcomputer.com/news/security/internet-archive-hacked-data-breach-impacts-31-million-users/)
+   * MSFT SAS Token Breach - [link](https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers)
+   * Uber Breach - [link](https://www.upguard.com/blog/what-caused-the-uber-data-breach)
+   * Internet Archive breach - [link](https://www.bleepingcomputer.com/news/security/internet-archive-hacked-data-breach-impacts-31-million-users/)

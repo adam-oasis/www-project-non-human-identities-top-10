@@ -43,15 +43,15 @@ Moreover, 3rd parties can be exposed to hard-coded credentials within the codeba
 
 ## Data points
 * [Datadog State of the Cloud 2024]((https://www.datadoghq.com/state-of-cloud-security/))
-  * 10% third party integration to AWS are overprivileged.
-  * 2% third party integration to AWS are vulnerable to confused deputy vulnerability.
-  * Initial access to 365 is made through malicious 3d-party OAuth apps.
+    * 10% third party integration to AWS are overprivileged.
+    * 2% third party integration to AWS are vulnerable to confused deputy vulnerability.
+    * Initial access to 365 is made through malicious 3d-party OAuth apps.
 * [CSA NHI Report](https://s3.amazonaws.com/content-production.cloudsecurityalliance/22j8ue25fxvafdnirpgoqtdv7l1u?response-content-disposition=inline%3B%20filename%3D%22The%20State%20of%20Non-Human%20Identity%20Security%2020240917.pdf%22%3B%20filename%2A%3DUTF-8%27%27The%2520State%2520of%2520Non-Human%2520Identity%2520Security%252020240917.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAS6XDIRHKHO4F5SU4%2F20241211%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241211T163927Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=394370ac74a7a3f24385341bdee52ca01958c4859595f1f9969ffefdaa6d6f2f)
-  * 38% answers put supply chain attacks as one of the top 3 most concerning NHI threats. (2/10)
-  * 16% answers put malicious suppliers as one of the top 3 most concerning NHI threats. (9/10)
-  * 29% of times compromised external integrations were the cause for NHI-related security incidents. (7/10)
-  * 21% of organizations put managing requests for third-party tools and services as most challenging to manage. (10/16)
-  * 26% of organizations need visibility into third-party vendors as the most important capability of an NHI tool. (1/16)
-  * 38% of organizations reported limited to no visibility into third-party vendors.
+    * 38% answers put supply chain attacks as one of the top 3 most concerning NHI threats. (2/10)
+    * 16% answers put malicious suppliers as one of the top 3 most concerning NHI threats. (9/10)
+    * 29% of times compromised external integrations were the cause for NHI-related security incidents. (7/10)
+    * 21% of organizations put managing requests for third-party tools and services as most challenging to manage. (10/16)
+    * 26% of organizations need visibility into third-party vendors as the most important capability of an NHI tool. (1/16)
+    * 38% of organizations reported limited to no visibility into third-party vendors.
 * Recent Breaches
-  * Sisense Breach - [link](https://medium.com/@ronilichtman/making-sense-out-of-the-sisense-hack-f61a3d9b80a7)
+    * Sisense Breach - [link](https://medium.com/@ronilichtman/making-sense-out-of-the-sisense-hack-f61a3d9b80a7)

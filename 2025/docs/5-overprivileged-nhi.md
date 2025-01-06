@@ -43,14 +43,14 @@ When an over-privileged NHI is compromised—whether through vulnerabilities in 
 
 ## Data points
 * [Datadog State of the Cloud 2024](https://www.datadoghq.com/state-of-cloud-security/)
-  * 17.6% have excessive data access, such as listing and accessing data from all S3 buckets in the account
-  * 10% of clusters have a dangerous node role that has full administrator access, allows for privilege escalation, has overly permissive data access (e.g., all S3 buckets), or allows for lateral movement across all workloads in the account
-  * Over one in three Google Cloud VMs (33%) have sensitive permissions to a project
-* [CSA NHI Report](https://s3.amazonaws.com/content-production.cloudsecurityalliance/22j8ue25fxvafdnirpgoqtdv7l1u?response-content-disposition=inline%3B%20filename%3D%22The%20State%20of%20Non-Human%20Identity%20Security%2020240917.pdf%22%3B%20filename%2A%3DUTF-8%27%27The%2520State%2520of%2520Non-Human%2520Identity%2520Security%252020240917.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAS6XDIRHKHO4F5SU4%2F20241211%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241211T163927Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=394370ac74a7a3f24385341bdee52ca01958c4859595f1f9969ffefdaa6d6f2f) 
-  * 33% answers put over-privileged accounts as one of the top 3 most concerning NHI threats (3/10)
-  * 37% of times over-privileged identities were the cause for NHI-related security incidents (2/10)
-  * 22% of organizations need managing permissions as the most important capability of an NHI tool (5/16)
-  * 26% of organizations believe that over 50% of their service accounts are over-privileged
+    * 17.6% have excessive data access, such as listing and accessing data from all S3 buckets in the account
+    * 10% of clusters have a dangerous node role that has full administrator access, allows for privilege escalation, has overly permissive data access (e.g., all S3 buckets), or allows for lateral movement across all workloads in the account
+    * Over one in three Google Cloud VMs (33%) have sensitive permissions to a project
+* [CSA NHI Report](https://cloudsecurityalliance.org/artifacts/state-of-non-human-identity-security-survey-report) 
+    * 33% answers put over-privileged accounts as one of the top 3 most concerning NHI threats (3/10)
+    * 37% of times over-privileged identities were the cause for NHI-related security incidents (2/10)
+    * 22% of organizations need managing permissions as the most important capability of an NHI tool (5/16)
+    * 26% of organizations believe that over 50% of their service accounts are over-privileged
 * [Orca Security State of the Cloud Security report 2022](https://orca.security/wp-content/uploads/2022/09/2022-State-of-Public-Cloud-Security-Report.pdf)
-  * 44% of environments have at least one privileged identity access management (IAM) role.
-  * 23% have at least one EC2 Instance with Administrator IAM role.
+    * 44% of environments have at least one privileged identity access management (IAM) role.
+    * 23% have at least one EC2 Instance with Administrator IAM role.

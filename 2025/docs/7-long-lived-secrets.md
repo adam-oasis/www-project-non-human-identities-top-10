@@ -34,12 +34,12 @@ Long-lived Secrets refers to the use of sensitive NHIs such as API keys, tokens,
 
 ## Data points
 * [Datadog State of the Cloud 2024](https://www.datadoghq.com/state-of-cloud-security/)
-  * 46% of AWS orgs users use long-lived console credentials
-  * 60% of keys across cloud providers have age > 1 year
-* [CSA NHI Report](https://s3.amazonaws.com/content-production.cloudsecurityalliance/22j8ue25fxvafdnirpgoqtdv7l1u?response-content-disposition=inline%3B%20filename%3D%22The%20State%20of%20Non-Human%20Identity%20Security%2020240917.pdf%22%3B%20filename%2A%3DUTF-8%27%27The%2520State%2520of%2520Non-Human%2520Identity%2520Security%252020240917.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAS6XDIRHKHO4F5SU4%2F20241211%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241211T163927Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=394370ac74a7a3f24385341bdee52ca01958c4859595f1f9969ffefdaa6d6f2f) 
-  * 45% of times lack of credential rotation were the cause for NHI-related security incidents (1/10)
-  * 26% of organizations need management of secrets lifecycle as the most important capability of an NHI tool (1/16)
-  * 51% of organizations have no formal process to offboard or revoke long-lived API keys
+    * 46% of AWS orgs users use long-lived console credentials
+    * 60% of keys across cloud providers have age > 1 year
+* [CSA NHI Report](hhttps://cloudsecurityalliance.org/artifacts/state-of-non-human-identity-security-survey-report) 
+    * 45% of times lack of credential rotation were the cause for NHI-related security incidents (1/10)
+    * 26% of organizations need management of secrets lifecycle as the most important capability of an NHI tool (1/16)
+    * 51% of organizations have no formal process to offboard or revoke long-lived API keys
 * [Orca Security State of the Cloud Security report 2022](https://orca.security/wp-content/uploads/2022/09/2022-State-of-Public-Cloud-Security-Report.pdf)
-  * 80% of organizations have KMS rotation disabled
-  * 79% of organizations have at least one access key older than 90 days
+    * 80% of organizations have KMS rotation disabled
+    * 79% of organizations have at least one access key older than 90 days

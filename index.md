@@ -84,15 +84,3 @@ Reusing the same NHI across different applications, services, or components — 
 
 During application development and maintenance, developers or administrators may misuse NHIs for manual tasks that should be performed using individual human identities with appropriate privileges. This practice introduces significant security risks such as elevated privileges for NHIs, lack of auditing and accountability due to indistinguishable activity between humans and automation.
 [Read More >>]({{ site.baseurl }}/2025/10-human-use-of-nhi/)
-
-## Project Road Map
-1. Submission of project proposal ✓
-2. Reaching out to prominent contributors of the identity security space ✓
-3. Mapping out top risks ✓
-4. Data collection on chosen risks ✓
-* A public survey co-operated with Cloud Security Alliance (CSA)
-* Data assessment on real-life environments and platforms
-* Public data collection of zero-day vulnerabilities
-5. Aggregation of data and risk scoring ✓
-6. Final draft of the top 10 risks alongside above Documentation efforts ✓
-7. Round-table together with contributors and leaders to construct roadmap towards project review and graduation to a Lab project. (ongoing)
