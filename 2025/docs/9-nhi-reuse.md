@@ -43,7 +43,7 @@ To minimize these risks, it's essential to assign unique NHIs to each applicatio
 
 ### Data Points
 
-- **Cloud Vulnerability Database \-** Chronicle cross-customer bucket access
+- **Cloud Vulnerability Database** \- Chronicle cross-customer bucket access
 - **CSA NHI Report** \- 14% of organizations need consumer identification as the most important capability of an NHI tool. (11/16)
 - **Recent Breach** \- .env file Breach \- [link](https://medium.com/@ronilichtman/large-scale-extortion-via-secrets-in-env-files-why-secret-vaults-just-arent-enough-9b4c568724ca)
 
