@@ -39,6 +39,10 @@ Exposed secrets can lead to significant security risks. If a secret is leaked, w
    - Automate the process of secret rotation to reduce the impact of exposed credentials.
    - Use tools that support secret versioning and automated updates in dependent services.
 
+## Related OWASP Resources
+* [OWASP Secrets Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html)
+* [OWASP WrongSecrets project](https://github.com/OWASP/wrongsecrets/)
+
 ## References
 * 38TB of data accidentally exposed by Microsoft AI researchers - [link](https://www.wiz.io/blog/38-terabytes-of-private-data-accidentally-exposed-by-microsoft-ai-researchers)
 * What Caused the Uber Data Breach? - [link](https://www.upguard.com/blog/what-caused-the-uber-data-breach)

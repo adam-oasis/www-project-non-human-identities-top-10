@@ -26,6 +26,9 @@ However, some authentication methods are deprecated, vulnerable to known attacks
 - **Standardize OAuth Implementations:** Avoid custom practices that deviate from OAuth standards to minimize security gaps.
 - **Conduct Regular Security Audits:** Periodically review authentication methods to identify and eliminate deprecated or insecure configurations.
 
+## Related OWASP Resources
+* [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+
 ## References
 - [Salesforce: Disabling Insecure Authorization Flows](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_disable_username_password_flow.htm&type=5)
 - [OAuth 2.0 Security Best Current Practice - Implicit Grant](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics#name-implicit-grant)
