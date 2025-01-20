@@ -22,7 +22,7 @@ However, some authentication methods are deprecated, vulnerable to known attacks
 
 ## How to Prevent
 - **Adopt Modern Authentication Standards:** Use OAuth 2.1 and OIDC for secure authentication and avoid deprecated flows like Implicit Flow or Authorization Code Flow without PKCE.
-- **Leverage Credential-less Methods:** Replace static credentials with temporary, scoped tokens through instance profiles or OIDC federation. Use cloud-specific credentials such as those provisioned by Amazon IMDS, or credentials provisioned through cloud-agnostic facilities such as SPIFFE.
+- **Leverage Dynamically Provisioned Credentials:** Replace static credentials with temporary, scoped tokens through instance profiles or OIDC federation. Use cloud-specific credentials such as those provisioned by Amazon IMDS, or credentials provisioned through cloud-agnostic facilities such as SPIFFE.
 - **Standardize OAuth Implementations:** Avoid custom practices that deviate from OAuth standards to minimize security gaps.
 - **Conduct Regular Security Audits:** Periodically review authentication methods to identify and eliminate deprecated or insecure configurations.
 
