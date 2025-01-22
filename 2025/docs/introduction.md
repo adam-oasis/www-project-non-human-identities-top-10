@@ -20,7 +20,7 @@ As modern software becomes increasingly automated and interconnected, NHIs have 
 Mismanagement of NHIs introduces significant security risks. Key issues include:
 
 - **Excessive Permissions**: NHIs are commonly granted very broad access to resources which leads to a widespread damage if compromised.
-- **Unnecessary Use of Long Term Credentials**: many cloud environments provide facilities for automatic generation of short term credentials that obviate the need for hard-to-manage long-term secrets. Such facilities include AWS *Roles*, Azure *Managed Identities* and the cloud-agnostic SPIFFE SVIDs.
+- **Unnecessary Use of Long Term Credentials**: many cloud environments provide facilities for automatic generation of short-term credentials that obviate the need for hard-to-manage long-term secrets. Such facilities include AWS *Roles*, Azure *Managed Identities* and the cloud-agnostic SPIFFE SVIDs.
 - **Credential Mismanagement**: NHI credentials can easily be wrongly managed: leaving hardcoded keys in code, poor or no rotation policies, and usage of deprecated authentication method make NHI vulnerable to compromise. 
 - **Lack of Monitoring**: NHIs are notoriously under-monitored, allowing malicious activity to go unnoticed.
 
