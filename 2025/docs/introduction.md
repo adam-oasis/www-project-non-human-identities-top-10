@@ -2,14 +2,16 @@
 
 ## What Are Non-Human Identities (NHIs)?
 
-Non-human identities (NHIs) are used to provide authorization to software entities such as applications, APIs, bots, and automated systems to access secured resources. Unlike human identities, NHIs are not controlled or directly owned by a human. Their identity object and authentication often work differently to human, and common human user security measures do not apply to them.
+Non-human identities (NHIs) are digital constructs used to identify, authenticate, and authorize different software entities to access secured resources. These entities include applications, workloads, APIs, bots, and automated systems. Unlike human identities, NHIs are not controlled or intrinsically tied to a human. Their identity object and authentication often work differently to human, and common human user security measures do not apply to them.
 
 Examples of NHIs include:
 
-- API keys used by microservices to access database applications.
-- Service accounts in backend systems connecting multiple subsystems.
-- Roles assocaited with automated services to access cloud resources.
-- Tokens used by bots to access protected application resources.
+- **Service accounts** used in backend systems to connect multiple subsystems.
+- **Roles** assocaited with automated services to access cloud resources.
+- **API or Access Keys** used by microservices to access database applications.
+- **Applications** used by third parties to perform tasks and enhancements.
+
+NHIs support a variety of different credentials and authentication methods, including passwords, certificates, tokens, keys, and more.
 
 As modern software becomes increasingly automated and interconnected, NHIs have become essential to application development.
 
