@@ -23,7 +23,7 @@ The Non-human identity (NHI) top 10 is a comprehensive list of the most pressing
 
 Non-human identities are prevalent in usage for facilitating creation of applications by developers, and the project is aimed at helping security professionals thoroughly understand their non-human attack surface, so they can better protect and manage it. The project spans across thoroughly explaining the risks and their potential exploits, as well as providing actionable prevention practices and incident response playbooks. 
 
-## NHI Top 10 - 2025 -  A sneak peak
+## NHI Top 10 - 2025 -  A sneak peek
 
 * [NHI1:2025 - Improper Offboarding]({{ site.baseurl }}/2025/1-improper-offboarding/)
 
