@@ -7,7 +7,7 @@ Non-human identities (NHIs) are digital constructs used to identify, authenticat
 Examples of NHIs include:
 
 - **Service accounts** used in backend systems to connect multiple subsystems.
-- **Roles** assocaited with automated services to access cloud resources.
+- **Roles** associated with automated services to access cloud resources.
 - **API or Access Keys** used by microservices to access database applications.
 - **Applications** used by third parties to perform tasks and enhancements.
 
