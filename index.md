@@ -25,7 +25,7 @@ Production software environments are composed of a large number of applications 
 
 While long-term application secrets behave similarly to human passwords, short term secrets may be generated on the fly by the run-time environment, based on application attestation, where the environment identifies the application and provisions it with credentials.
 
-This project is aimed at helping security professionals thoroughly understand their non-human attack surface, so they can better protect and manage it. The project spans across thoroughly explaining the risks and their potential exploits, as well as providing actionable prevention practices and incident response playbooks.
+This project is aimed at helping security professionals thoroughly understand their non-human identity attack surface, so they can better protect and manage it. The project spans across thoroughly explaining the risks and their potential exploits, as well as providing actionable prevention practices and incident response playbooks.
 
 ## NHI Top 10 - 2025 -  A sneak peak
 
