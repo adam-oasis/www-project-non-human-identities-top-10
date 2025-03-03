@@ -21,7 +21,11 @@ This comprehensive list highlights the most critical challenges in integrating N
 
 The Non-human identity (NHI) top 10 is a comprehensive list of the most pressing security risks and vulnerabilities that non-human identities present to organizations. 
 
-Non-human identities are prevalent in usage for facilitating creation of applications by developers, and the project is aimed at helping security professionals thoroughly understand their non-human attack surface, so they can better protect and manage it. The project spans across thoroughly explaining the risks and their potential exploits, as well as providing actionable prevention practices and incident response playbooks. 
+Production software environments are composed of a large number of applications which need to be identified, resulting in "non-human identities" or NHI. Application identities are often associated with secrets, which are used as credentials similarly to the way humans authenticate into computer systems. Application secrets may be used to authenticate into other applications within the trust domain. They may also be used to authenticate into 3rd party SaaS applications.
+
+While long-term application secrets behave similarly to human passwords, short term secrets may be generated on the fly by the run-time environment, based on application attestation, where the environment identifies the application and provisions it with credentials.
+
+This project is aimed at helping security professionals thoroughly understand their non-human identity attack surface, so they can better protect and manage it. The project spans across thoroughly explaining the risks and their potential exploits, as well as providing actionable prevention practices and incident response playbooks.
 
 ## NHI Top 10 - 2025 -  A sneak peek
 
